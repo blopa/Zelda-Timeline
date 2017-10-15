@@ -596,18 +596,19 @@ Splited timeline
   /*margin-left: -30px;*/
 /*}*/
 
-.container-title {
-  width: 100%;
-  height: 60px;
-  background-color: #d7e4ed;
-  text-align: center;
-  text-transform: uppercase;
+.block-title {
   position: absolute;
-  top: -80px;
+  height: 20px;
+  left: 5%;
+  width: 90%;
+  border-bottom: 1px dashed red;
+  z-index: 999;
+  top: -28px;
+  text-transform: uppercase;
 }
 
-.split > .cd-timeline-container .cd-timeline-block {
-  top: 5rem;
+.cd-date {
+  display: none !important;
 }
 
 .content {
