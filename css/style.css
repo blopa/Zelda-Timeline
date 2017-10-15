@@ -19,6 +19,7 @@ body {
   font-family: "Droid Serif", serif;
   color: #7f8c97;
   background-color: #e9f0f5;
+  overflow-x: hidden;
 }
 
 a {
@@ -85,7 +86,7 @@ header h1 {
   position: relative;
   padding: 2em 0;
   margin-top: 2em;
-  margin-bottom: 2em;
+  /*margin-bottom: 2em;*/
 }
 .cd-timeline-container::before {
   /* this is the vertical line */
@@ -101,7 +102,7 @@ header h1 {
 @media only screen and (min-width: 1170px) {
   .cd-timeline-container {
     margin-top: 3em;
-    margin-bottom: 3em;
+    /*margin-bottom: 3em;*/
   }
   .cd-timeline-container::before {
     left: 50%;
@@ -296,16 +297,16 @@ header h1 {
 }
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
-    font-size: 20px;
-    font-size: 1.25rem;
-  }
-  .cd-timeline-content p {
     font-size: 16px;
     font-size: 1rem;
   }
-  .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+  .cd-timeline-content p {
     font-size: 14px;
     font-size: 0.875rem;
+  }
+  .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+    font-size: 12px;
+    font-size: 0.75rem;
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -494,6 +495,8 @@ Splited timeline
   z-index: 1;
   border-bottom: 35px solid #e9f0f5;
   margin-bottom: -35px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .split .cd-timeline-container {
@@ -510,7 +513,7 @@ Splited timeline
 }
 
 .total-split-3 .cd-timeline-block:nth-child(even) .cd-date {
-  right: 155%;
+  right: 170%;
 }
 
 .split .cd-date {
@@ -518,7 +521,7 @@ Splited timeline
 }
 
 .total-split-3 .cd-date {
-  left: 156%;
+  left: 165%;
 }
 
 .split .cd-timeline-block {
@@ -526,7 +529,8 @@ Splited timeline
 }
 
 .total-split-3 .cd-timeline-content {
-  margin-left: 0em !important;
+  margin-left: 0.5em !important;
+  width: 36% !important;
 }
 
 .split .cd-timeline-content {
@@ -575,7 +579,7 @@ Splited timeline
 .split::after {
   background: #e9f0f5;
   content: '';
-  height: calc(100vh - 400px);
+  /*height: calc(100vh - 400px);*/
   width: 100vh;
   position: absolute;
 }
@@ -591,6 +595,26 @@ Splited timeline
   /*position: absolute;*/
   /*margin-left: -30px;*/
 /*}*/
+
+.container-title {
+  width: 100%;
+  height: 60px;
+  background-color: #d7e4ed;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  top: -80px;
+}
+
+.split > .cd-timeline-container .cd-timeline-block {
+  top: 5rem;
+}
+
+.content {
+  margin-bottom: 2rem;
+  overflow: auto;
+  overflow-x: hidden;
+}
 
 @media only screen and (max-width: 900px) {
   .split::before {
