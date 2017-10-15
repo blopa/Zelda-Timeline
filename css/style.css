@@ -587,6 +587,19 @@ Splited timeline
   .split .cd-timeline-content {
     width: 70% !important;
   }
+
+  .total-split-3.inner-split::before {
+    right: 64% !important;
+  }
+
+  .total-split-3 .cd-timeline-container .total-split-2::before {
+    right: 46% !important;
+    width: 50.5%;
+  }
+
+  .total-split-3.inner-split .cd-timeline-content {
+    width: 70% !important;
+  }
 }
 
 @media only screen and (max-width: 1170px) {
@@ -602,5 +615,19 @@ Splited timeline
   .split .cd-timeline-content {
     width: 80%;
     margin-left: 4em;
+  }
+
+  .total-split-3 .cd-timeline-container .total-split-2::before {
+    right: 47%;
+  }
+
+  .total-split-3.inner-split .cd-timeline-content {
+    margin-left: 4em !important;
+    width: 75% !important;
+  }
+
+  .total-split-3.inner-split::before {
+    right: 64.6% !important;
+    width: 33.5%;
   }
 }
