@@ -61,10 +61,11 @@ Main components
 
 -------------------------------- */
 header {
-  height: 200px;
-  line-height: 200px;
+  height: 150px;
+  /*line-height: 200px;*/
   text-align: center;
   background: #303e49;
+  padding-top: 2rem;
 }
 header h1 {
   color: white;
@@ -73,8 +74,8 @@ header h1 {
 }
 @media only screen and (min-width: 1170px) {
   header {
-    height: 300px;
-    line-height: 300px;
+    /*height: 300px;*/
+    /*line-height: 300px;*/
   }
   header h1 {
     font-size: 24px;
